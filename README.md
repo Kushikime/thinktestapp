@@ -1,5 +1,5 @@
 # thinktestapp
-!(зображення.png)
+![GitHub Logo](зображення.png)
 
 
 
