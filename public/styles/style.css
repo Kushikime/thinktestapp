@@ -1,0 +1,84 @@
+.productCard{
+    background-color: rgb(236, 235, 235);
+    transition: 1s;
+    margin: 30px;
+    max-width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    height: 400px;
+}
+
+.productCard:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.productCard .imageBlock{
+    display: flex;
+    height: 200px;
+}
+
+.productCard .name{
+    font-size: 20px;
+}
+
+.productCard .description{
+    color: grey;
+    display: inline-block;
+    width: 190px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+
+.searchSettings{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    margin-top: 60px;
+    background: rgb(236, 235, 235);
+}
+
+.searchSettings form{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#searchField{
+    max-width: 300px;
+    margin-left: 80px;
+    padding-left: 20px;
+    background-color: white;
+    border-bottom: none;
+}
+
+
+.searchSettings form .price{
+    background-color: white;
+    max-width: 70px;
+    margin: 0 10px;
+}
+
+.priceBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.priceBlock span{
+    font-size: 19px;
+}
+
+.searchSettings form select{
+    display: flex;
+    max-width: 200px;
+}

@@ -1,0 +1,74 @@
+<%- include('./partials/head.ejs'); -%>
+
+
+<%- include('./partials/navbar.ejs'); -%>
+
+
+
+
+
+
+<div class="container">
+    <div class="row searchSettings">
+        <form method="POST">
+            <input id="searchField" type="text" name="keyword" placeholder="Search by name">
+
+
+            <div class="priceBlock">
+                <input class="price" type="number" name="min" placeholder="min">
+
+                <span>-</span>
+
+                <input class="price" type="number" name="max" placeholder="max">
+
+            </div>
+
+
+            <select name="sortBy" id="sortBy">
+                <option value="lowPrice">Low price first</option>
+                <option value="highPrice">High price first</option>
+            </select>
+            
+            <button class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+
+
+    <h2>Products list</h2>
+
+
+    <% if(locals.noProducts) {%>
+        <h2><% noProducts %></h2> 
+    <%} %>
+
+    <% if(locals.products){ %>
+        <div class="row">
+            <% locals.products.forEach(product => { %>
+        
+                <div class="col s6 m3 l2 productCard">
+                    <div class="imageBlock">
+                
+                    </div>
+                
+                    <span class="name">
+                        <%= product.name %>
+                    </span>
+                    <br>
+
+                    <span class="price">
+                        <%= product.price %> $    
+                    </span>
+
+
+                    <p class="description">
+                        <%= product.description %>
+                    </p>
+                </div>
+
+            <% }); %>
+        </div>
+    <% } %>
+
+
+<%- include('./partials/footer.ejs'); -%>

@@ -1,0 +1,65 @@
+<%- include('./partials/head.ejs'); -%>
+
+
+
+
+<div class="row">
+    <form action="#" method="POST">
+        <div class="col s12 m8 l6 offset-m2 offset-l3">
+            <div class="card">
+                
+
+                <div class="card-action purple white-text">
+                    <h3>Login form</h3>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <br>
+                    
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required >
+                    </div>
+                    
+                    <br>
+                    
+                    <a href="/register">Create account</a>
+
+                    <br>
+
+                    <br>
+                    <div class="form-field">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                    
+                    <% if(messages.success_msg) {%>
+                        <br>
+                        <li><%= messages.success_msg %></li>
+                    <% } %>
+
+
+                    <% if (messages.error){%>
+                        <br>
+                        <li><%= messages.error %></li>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs'); -%>

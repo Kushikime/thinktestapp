@@ -1,0 +1,54 @@
+<%- include('./partials/head.ejs'); -%>
+
+<%- include('./partials/navbar.ejs'); -%>
+
+
+
+
+<div class="row" style="margin-top: 100px;">
+    <form method="POST">
+        <div class="col s12 m8 l6 offset-m2 offset-l3">
+            <div class="card">
+                
+
+                <div class="card-action purple white-text">
+                    <h3>Adding new product</h3>
+                </div>
+
+                <div class="card-content">
+                    <div class="form-field">
+                        <label for="name">Product name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <br>
+
+                    <div class="form-field">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" name="price" required>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="form-field">
+                        <label for="description">Product description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    
+                    <br>
+
+                    <div class="form-field">
+                        <button class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+<%- include('./partials/footer.ejs'); -%>
