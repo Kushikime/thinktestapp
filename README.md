@@ -1,4 +1,7 @@
 # thinktestapp
+!(зображення.png)
+
+
 
 To be able run the app
 
